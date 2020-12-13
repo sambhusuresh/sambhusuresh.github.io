@@ -53,10 +53,10 @@ const draw = () => {
             py = s.position.y * k + h / 2;
         if (px >= 0 && px <= w && py >= 0 && py <= h) {
             let size = (1 - s.position.z / (stars.length / 8)) * 2;
-            $.fillStyle = 'rgba(255, 255, 255, 1)';
+            $.fillStyle = 'rgba(255, 44, 44, 1)';
             if (s.life < 1) {
-                $.fillStyle = 'rgba(160, 0, 255, ' + s.life + ')';
-                s.life += s.speed / 10000;
+                $.fillStyle = 'rgba(149, 05, 255, ' + s.life + ')';
+                s.life += s.speed / 8000;
             }
             $.beginPath();
             $.arc(px, py, size, 0, Math.PI * 2);
