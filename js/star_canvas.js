@@ -8,7 +8,7 @@ class Star {
             z: random_range(1, depth)
         };
 
-        this.speed = 75;
+        this.speed = 150;
         this.life = 0;
     }
 }
@@ -55,8 +55,8 @@ const draw = () => {
             let size = (1 - s.position.z / (stars.length / 8)) * 2;
             $.fillStyle = 'rgba(255, 0, 0, 1)';
             if (s.life < 1) {
-                $.fillStyle = 'rgba(05, 0, 255, ' + s.life + ')';
-                s.life += s.speed / 9200;
+                $.fillStyle = 'rgba(100, 03, 255, ' + s.life + ')';
+                s.life += s.speed / 10000;
             }
             $.beginPath();
             $.arc(px, py, size, 0, Math.PI * 2);
