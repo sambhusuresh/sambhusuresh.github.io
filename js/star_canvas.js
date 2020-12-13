@@ -55,7 +55,7 @@ const draw = () => {
             let size = (1 - s.position.z / (stars.length / 8)) * 2;
             $.fillStyle = 'rgba(255, 0, 0, 1)';
             if (s.life < 1) {
-                $.fillStyle = 'rgba(0, 05, 255, ' + s.life + ')';
+                $.fillStyle = 'rgba(05, 0, 255, ' + s.life + ')';
                 s.life += s.speed / 9200;
             }
             $.beginPath();
