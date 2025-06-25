@@ -1,120 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#262626">
-    <title>Sambhu Suresh- Hi!</title>
-    <link rel="shortcut icon" href="/images/sambhu.jpeg" type="image/x-icon">
-    <link rel="icon" href="/images/sambhu.jpeg" type="image/x-icon">
-    <link href="css/home.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    
+    <title>Sambhu Suresh | Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Menu -->
-    <nav class="nav">
-        <div class="open">
-            <span class="cls"></span>
-            <span>
-                <ul class="sub-menu ">
-                    <li>
-                        <a href="/" title="Home">Home</a>
-                    </li>
-                    <li>
-                        <a href="/#about" title="About">About</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Blog">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" title="contact">Contact</a>
-                    </li>
-                </ul>
-            </span>
-            <span class="cls"></span>
-            <div class="close"></div>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-code"></i> SS</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Sambhu Suresh</span></h1>
+            <p>Electronics Engineer | Aspiring Developer</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
         </div>
-    </nav>
-    <!-- background stars -->
-    <canvas id="c"></canvas>
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
 
-    <!-- Main Content -->
-    <main id="main">
-        <div id="well">
-            <div id="intro" class="panel">
-            
-                <div class="intro-content">
-                    <div class="row">
-            
-                        <h5>Hello, World!</h5>
-                        <h1>I'm Sambhu Suresh</h1>
-            
-                        <p class="intro-position">
-                            <span>electronics</span>
-                            <span>Coding</span>
-                            <span>Eating</span>
-                            <span>Sleeping</span>
-                        </p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <div class="img-border">
+                        <img src="/assets/profile.jpg" alt="Profile Photo">
                     </div>
-            
-                </div> <!-- /intro-content -->
-
-                <ul class="social-media-list intro-social">
-                    <li><a href="https://github.com/sambhusuresh" target="_blank" class="contact-icon">
-                            <i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/sambhu-s-1b334115a/" target="_blank" class="contact-icon">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="mailto:sambhusuresh4798@gmail.com" target="_blank" class="contact-icon">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="https://t.me/Re_definer" target="_blank" class="contact-icon">
-                            <i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-                <!-- /intro-social -->
-            
-            </div> <!-- /intro -->
-
-            <div class="panel" id="about">
-                <div class="about">
-                    <div class="about-overlay"></div>
-                    <div class="pic-container">
-                        <!-- <img src="/images/profile.jpeg" alt="my picture" id="dp"> -->
-                        <div class="dp-container">
-                            <img src="/images/sambhu.jpeg" alt="my picture" id="dp">
-                            <a href="#" id="resume">Know more</a>
-                        </div>
-                        <div class="description">
-                            <h2 style="margin: 10px;">#About_Me</h2>
-                            <p>
-                                I am Sambhu s, a 22 yr old electronics and communication engineer from kerala, India.
-                                I am on completing my Bachelor's of Technology in electronics and communication from HCET, Kerala.
-                                I have a predilection for electronics and enjoy working on projects where approaching electronics and
-                                iot development
-                                as co-dependent processes can lead to smarter solutions and a better overall product experience for 
-                                humans.
-                                If you have an exciting project in mind, or just wanna chat, <a id="wp"
-                                    href="https://wa.me/+919605687152">get in touch with me here</a> :)</p>
-                        </div>
+                </div>
+                <div class="about-content">
+                    <h3>Creative Engineer with Passion for Innovation</h3>
+                    <p>I'm Sambhu s, an Electronics and Communication Engineer passionate about development, problem-solving,
+                        and building scalable digital solutions. I enjoy learning new technologies and creating innovative projects that make an impact</p>
+                    <p>When I'm not Live, you can find me exploring new technologies, chating with GPTs, or in the mountains.</p>
+                    <div class="skills">
+                        <span><i class="fas fa-lightbulb"></i> Arduino</span>
+                        <span><i class="fas fa-wifi"></i> IoT</span>
+                        <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span><i class="fab fa-linux"></i> Linux</span>
+                        <span><i class="fas fa-robot"></i> Robotics</span>
+                        <span><i class="fab fa-git-alt"></i> Git</span>
                     </div>
-            
                 </div>
             </div>
         </div>
-        <!-- / Main Content -->
-    </main>
-<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/star_canvas.js"></script>
-<script src="js/main.js"></script>
-<script src="js/home.js"></script>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Arduino & IoT</h3>
+                    <p>Hands-on experience with Arduino and IoT (Internet of Things), including designing circuits, programming microcontrollers, and integrating sensors for real-world automation projects.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web development</h3>
+                    <p>Creating responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript. I enjoy building sleek interfaces and functional web apps.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux</h3>
+                    <p>Linux in my daily workflow, which has strengthened my skills in terminal commands, package management, This experience helps me stay efficient, understand system-level operations.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Have basic experience with Python, using it for scripting, automation, and solving problems.Enjoy using Python for quick tasks and logical problem-solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-header">
+                        <img src="/assets/alexa-pro.jpg" alt="Project 1">
+                        <div class="project-tags">
+                            <span class="project-tag">Arduino</span>
+                            <span class="project-tag">IoT</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Alexa The Robot</h3>
+                        <p>Letting the handheld alexa to discover new journeys</p>
+                        <a href="https://drive.google.com/file/d/1NtwiBmM1dn4B_vT0Sn2SVuDPXJlxjBQX/view?usp=drive_link" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="card-header">
+                        <img src="/assets/Fisherman.jpg" alt="Project 2">
+                        <div class="project-tags">
+                            <span class="project-tag">Arduino</span>
+                            <span class="project-tag">LoRa</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Man-Overboard Detection System</h3>
+                        <p>Arduino-based system for man-overboard detection in marine vehicles.</p>
+                        <!-- <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a> -->
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="card-header">
+                        <img src="/assets/mag.jpg" alt="Project 3">
+                        <div class="project-tags">
+                            <span class="project-tag">Html/CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hashtag - College Magazine </h3>
+                        <p>Digitized and hosted the college magazine on a user-friendly, responsive online platform to enhance 
+                            accessibility and reach for students and faculty.</p>
+                        <a href="https://sambhusuresh.github.io/hashtag/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm currently available for freelance work and open to new opportunities. Feel free to reach out to discuss your project.</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> sambhusuresh4798@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> +91 9605687152</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kollam, India</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Sambhu Suresh</h3>
+                <p>Creating beautiful digital experiences with modern technologies.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/sambhusuresh"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sambhus"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/sambhusuresh/"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/sambhusuresh"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sambhu Suresh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
